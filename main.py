@@ -63,7 +63,7 @@ class yszfplugin(StellarPlayer.IStellarPlayerPlugin):
     
     def show(self):
         controls = self.makeLayout()
-        self.doModal('main',800,700,'',controls)        
+        self.doModal('main',910,700,'',controls)        
     
     def makeLayout(self):
         zywz_layout = [
@@ -102,7 +102,7 @@ class yszfplugin(StellarPlayer.IStellarPlayerPlugin):
             {'type':'space','height':5},
             {'type':'grid','name':'mediaclassgrid','itemlayout':mediaclass_layout,'value':self.mediaclass,'itemheight':30,'itemwidth':80,'height':80},
             {'type':'space','height':5},
-            {'type':'grid','name':'mediagrid','itemlayout':mediagrid_layout,'value':self.medias,'separator':True,'itemheight':240,'itemwidth':150},
+            {'type':'grid','name':'mediagrid','itemlayout':mediagrid_layout,'value':self.medias,'separator':True,'itemheight':240,'itemwidth':300},
             {'group':
                 [
                     {'type':'space'},
@@ -357,7 +357,7 @@ class yszfplugin(StellarPlayer.IStellarPlayerPlugin):
         controls = [
             {'type':'space','height':5},
             {'group':[
-                    {'type':'image','name':'mediapicture', 'value':mediainfo['pic'],'width':0.25},
+                    {'type':'image','name':'mediapicture', 'value':mediainfo['pic'],'width':0.5},
                     {'group':[
                             {'type':'label','name':'medianame','textColor':'#ff7f00','fontSize':15,'value':mediainfo['medianame'],'height':40},
                             {'type':'label','name':'actor','textColor':'#555500','value':mediainfo['actor'],'height':0.3},
